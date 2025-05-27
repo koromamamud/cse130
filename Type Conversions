@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int kidsInFamily1;  // Should be int, not doublle
+    int kidsInFamily2;  // (No 2.3 kids??)
+    int numFamilies;
+
+    double avgKidsPerFamily;  // Expect fraction, so double
+
+    kidsInFamily1 = 3;  // Example input
+    kidsInFamily2 = 4;  // Example input
+    numFamilies = 2;  // Example input
+
+    avgKidsPerFamily = (kidsInFamily1 + kidsInFamily2) / numFamilies;
+
+    //Should be 3.5, but is 3 instead
+    cout << "Average number of kids per family: " << avgKidsPerFamily << endl;
+
+    return 0;
+}
